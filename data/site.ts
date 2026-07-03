@@ -22,6 +22,43 @@ export const site = {
   ],
 } as const;
 
+export const heroHighlights = [
+  "M.Sc. Big Data & AI @ SRH Berlin",
+  "2+ yrs enterprise backend",
+  "Conference publication",
+  "Production LLM apps",
+] as const;
+
+export const stats = [
+  { value: 2, suffix: "+", label: "Years professional experience" },
+  { value: 4, suffix: "", label: "Featured projects" },
+  { value: 1, suffix: "", label: "Conference publication" },
+  { value: 3, suffix: "", label: "Cloud platforms — AWS · Azure · GCP" },
+] as const;
+
+export const services = [
+  {
+    title: "LLM & GenAI Applications",
+    description:
+      "RAG pipelines, prompt engineering, eval harnesses, and Claude API integrations — built to ship, not just demo.",
+  },
+  {
+    title: "Backend & APIs",
+    description:
+      "FastAPI and Spring Boot services, RESTful APIs, microservices, and real-time WebSocket/SSE systems.",
+  },
+  {
+    title: "Cloud & Infrastructure-as-Code",
+    description:
+      "Terraform, AWS/GCP/Azure, GitHub Actions with OIDC, Docker, and CI/CD pipelines.",
+  },
+  {
+    title: "Data & NLP Pipelines",
+    description:
+      "Document classification, information extraction, analytics, and synthetic data with fidelity metrics.",
+  },
+] as const;
+
 export const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },

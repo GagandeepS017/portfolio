@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
-import { site } from "@/data/site";
+import { ArrowRight, ChevronDown, Download, Github, Linkedin, Mail } from "lucide-react";
+import { heroHighlights, site } from "@/data/site";
 
 const container = {
   hidden: {},
@@ -118,7 +118,40 @@ export default function Hero() {
             </a>
           </div>
         </motion.div>
+
+        <motion.ul
+          variants={item}
+          className="mt-12 flex flex-wrap gap-3"
+          aria-label="Highlights"
+        >
+          {heroHighlights.map((highlight) => (
+            <li
+              key={highlight}
+              className="rounded-full border border-neutral-800 bg-surface/60 px-4 py-1.5 font-mono text-xs text-neutral-400"
+            >
+              {highlight}
+            </li>
+          ))}
+        </motion.ul>
       </motion.div>
+
+      <motion.a
+        href="#projects"
+        aria-label="Scroll to projects"
+        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-neutral-500 transition-colors hover:text-accent sm:block"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.6 }}
+      >
+        <motion.span
+          className="flex flex-col items-center gap-1"
+          animate={reduceMotion ? undefined : { y: [0, 8, 0] }}
+          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <span className="font-mono text-[10px] uppercase tracking-widest">Scroll</span>
+          <ChevronDown size={18} aria-hidden />
+        </motion.span>
+      </motion.a>
     </section>
   );
 }

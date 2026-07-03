@@ -1,13 +1,40 @@
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
-import { site } from "@/data/site";
+import { Cloud, Database, Github, Linkedin, Mail, MapPin, Server, Sparkles } from "lucide-react";
+import { services, site } from "@/data/site";
 import Section from "./Section";
 import Reveal from "./Reveal";
+
+const serviceIcons = [Sparkles, Server, Cloud, Database];
 
 export default function Contact() {
   return (
     <Section id="contact" number="06" title="Get In Touch">
       <Reveal>
-        <div className="mx-auto max-w-2xl py-6 text-center">
+        <h3 className="text-center font-mono text-xs uppercase tracking-widest text-neutral-500">
+          What I can help you with
+        </h3>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {services.map((service, i) => {
+            const Icon = serviceIcons[i % serviceIcons.length];
+            return (
+              <div
+                key={service.title}
+                className="rounded-lg border border-neutral-800 bg-surface p-6 transition-colors hover:border-accent/40"
+              >
+                <Icon size={20} className="text-accent" aria-hidden />
+                <h4 className="mt-3 text-sm font-semibold text-neutral-100">
+                  {service.title}
+                </h4>
+                <p className="mt-2 text-xs leading-relaxed text-neutral-500">
+                  {service.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <div className="mx-auto max-w-2xl pt-16 text-center">
           <p className="text-lg leading-relaxed text-neutral-400">
             I&apos;m actively looking for{" "}
             <span className="text-neutral-200">

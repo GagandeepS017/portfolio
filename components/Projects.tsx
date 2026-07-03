@@ -51,25 +51,35 @@ export default function Projects() {
                 </div>
               </div>
 
-              <p className="mt-4 border-l-2 border-accent/60 pl-4 text-sm italic text-neutral-400">
-                {project.problem}
-              </p>
-
-              <p className="mt-4 max-w-3xl leading-relaxed text-neutral-400">
-                {project.description}
-              </p>
-
-              {project.keyDecisions && (
-                <p className="mt-4 flex max-w-3xl gap-2.5 text-sm leading-relaxed text-neutral-500">
-                  <Wrench size={15} className="mt-0.5 shrink-0 text-accent/70" aria-hidden />
-                  <span>
-                    <span className="font-mono text-xs uppercase tracking-wider text-accent/80">
-                      Key decisions:
-                    </span>{" "}
-                    {project.keyDecisions}
-                  </span>
-                </p>
-              )}
+              <div className="mt-6 space-y-5">
+                <div className="border-l-2 border-neutral-800 pl-4">
+                  <p className="font-mono text-xs uppercase tracking-wider text-accent/80">
+                    Challenge
+                  </p>
+                  <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-neutral-400">
+                    {project.problem}
+                  </p>
+                </div>
+                <div className="border-l-2 border-accent/50 pl-4">
+                  <p className="font-mono text-xs uppercase tracking-wider text-accent/80">
+                    Solution
+                  </p>
+                  <p className="mt-1.5 max-w-3xl leading-relaxed text-neutral-400">
+                    {project.description}
+                  </p>
+                </div>
+                {project.keyDecisions && (
+                  <div className="border-l-2 border-neutral-800 pl-4">
+                    <p className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-accent/80">
+                      <Wrench size={13} aria-hidden />
+                      Key decisions
+                    </p>
+                    <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-neutral-500">
+                      {project.keyDecisions}
+                    </p>
+                  </div>
+                )}
+              </div>
 
               <ul className="mt-6 flex flex-wrap gap-2" aria-label="Tech stack">
                 {project.stack.map((tech) => (
