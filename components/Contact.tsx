@@ -11,7 +11,7 @@ export default function Contact() {
       id="contact"
       number="06"
       title="Let's Work Together"
-      subtitle="Hiring, collaborating, or just curious about a project — say hi."
+      subtitle="Hiring, collaborating, or just curious about a project? Say hi."
     >
       <Reveal>
         <h3 className="text-center font-mono text-xs uppercase tracking-widest text-neutral-500">
@@ -46,8 +46,8 @@ export default function Contact() {
               Werkstudent, internship, and full-time AI/ML &amp; software roles
               in Germany
             </span>
-            . If you&apos;re hiring — or just want to talk LLMs, backend
-            systems, or infrastructure — my inbox is open.
+            . If you&apos;re hiring, or just want to talk LLMs, backend
+            systems, or infrastructure, my inbox is open.
           </p>
 
           <a

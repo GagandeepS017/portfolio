@@ -23,13 +23,13 @@ export default function About() {
               <span className="text-neutral-200">
                 two years of enterprise Java/Spring Boot
               </span>{" "}
-              at Vrize in Bangalore — real production systems for real clients,
+              at Vrize in Bangalore. Real production systems for real clients,
               where a bad deploy meant angry users, not a failed notebook cell.
               That&apos;s where I learned to care about testing, CI/CD, and code
               that other people can maintain.
             </p>
             <p>
-              Then LLMs changed what software could do, and I wanted in — not
+              Then LLMs changed what software could do, and I wanted in, not
               as a spectator. So I moved to Berlin for an{" "}
               <span className="text-neutral-200">M.Sc. in Big Data &amp; AI</span>{" "}
               at SRH (graduating Sept 2026), where I now also work as a{" "}
@@ -40,9 +40,9 @@ export default function About() {
               The result is a rare combination:{" "}
               <span className="text-accent">
                 I build AI products with backend-engineer discipline
-              </span>{" "}
-              — sandboxed execution, eval harnesses, streaming APIs, and
-              Terraform-managed infrastructure. Prototypes are easy; things
+              </span>
+              : sandboxed execution, eval harnesses, streaming APIs, and
+              Terraform-managed infrastructure. Prototypes are easy. Things
               that stay up are not.
             </p>
           </div>
@@ -53,14 +53,14 @@ export default function About() {
             <li className="flex items-start gap-3">
               <GraduationCap size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden />
               <span className="text-neutral-300">
-                M.Sc. Big Data &amp; AI — SRH Berlin
+                M.Sc. Big Data &amp; AI, SRH Berlin
                 <span className="block text-xs text-neutral-500">Graduating Sept 2026</span>
               </span>
             </li>
             <li className="flex items-start gap-3">
               <FlaskConical size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden />
               <span className="text-neutral-300">
-                Research Assistant — NLP pipelines
+                Research Assistant, NLP pipelines
                 <span className="block text-xs text-neutral-500">RAG, prompt engineering, document classification</span>
               </span>
             </li>
@@ -68,7 +68,7 @@ export default function About() {
               <MapPin size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden />
               <span className="text-neutral-300">
                 {site.location}
-                <span className="block text-xs text-neutral-500">Student visa — work permitted</span>
+                <span className="block text-xs text-neutral-500">Student visa, work permitted</span>
               </span>
             </li>
             <li className="flex items-start gap-3">

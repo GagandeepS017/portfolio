@@ -66,7 +66,7 @@ function Terminal() {
           <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
           <span className="h-3 w-3 rounded-full bg-[#28c840]" />
           <span className="mx-auto -translate-x-3 font-mono text-xs text-neutral-500">
-            gagandeep@berlin — zsh
+            gagandeep@berlin: ~/portfolio
           </span>
         </div>
         <div className="p-5 font-mono text-[13px] leading-relaxed">
@@ -74,7 +74,7 @@ function Terminal() {
             <span className="text-accent">$</span>{" "}
             <span className="text-neutral-300">whoami</span>
           </p>
-          <p className="text-neutral-400">backend engineer → AI developer</p>
+          <p className="text-neutral-400">backend engineer turned AI developer</p>
           <p className="mt-3">
             <span className="text-accent">$</span>{" "}
             <span className="text-neutral-300">cat profile.json</span>
@@ -182,9 +182,9 @@ export default function Hero() {
             variants={item}
             className="mt-6 max-w-xl leading-relaxed text-neutral-400"
           >
-            {site.title} — two years shipping enterprise backends, now deep in
-            GenAI: RAG pipelines, eval harnesses, and Infrastructure-as-Code.
-            Based in {site.location}, work permitted.
+            I spent two years shipping enterprise backends and now work on
+            GenAI full time: RAG pipelines, eval harnesses, and
+            Infrastructure-as-Code. Based in {site.location}, work permitted.
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-4">

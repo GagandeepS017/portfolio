@@ -13,7 +13,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "DataGrid — AI-Powered Analytics Platform",
+    title: "DataGrid: AI-Powered Analytics Platform",
     problem: "Non-technical users can't query data without SQL.",
     description:
       "Production-deployed analytics platform with a natural-language-to-SQL pipeline, sandboxed query execution, real-time SSE streaming, and auto-generated Recharts visualizations. Includes a Gaussian Copula synthetic-data engine with fidelity metrics and a text-to-SQL eval harness with execution-accuracy benchmarking tracked in MLflow.",
@@ -36,10 +36,10 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "AsyncMeet (MANAN) — AI Async Decision-Making Platform",
+    title: "AsyncMeet (MANAN): AI Async Decision-Making Platform",
     problem: "Live meetings are expensive and exclude async/distributed teams.",
     description:
-      "A SaaS platform that replaces live meetings — teams submit input asynchronously via a guided chat powered by Claude Sonnet, which auto-asks follow-up questions, then synthesizes all responses into a structured decision summary on a real-time WebSocket dashboard.",
+      "A SaaS platform that replaces live meetings. Teams submit input asynchronously through a guided chat powered by Claude Sonnet, which asks follow-up questions on its own, then synthesizes all responses into a structured decision summary on a real-time WebSocket dashboard.",
     keyDecisions:
       "WebSocket dashboard for live state; Claude-driven adaptive follow-up questioning.",
     stack: [
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     title: "AWS Account Onboarding Automation",
     problem: "Manual AWS account setup is slow, inconsistent, and error-prone.",
     description:
-      "An Infrastructure-as-Code pipeline that provisions AWS accounts from a single YAML config — IAM users/groups/policies, S3 buckets, and VPC networking via Terraform and GitHub Actions with OIDC auth — auto-generating per-user runbooks after every deploy.",
+      "An Infrastructure-as-Code pipeline that provisions complete AWS accounts from a single YAML config: IAM users, groups and policies, S3 buckets, and VPC networking, all through Terraform and GitHub Actions with OIDC auth. It also writes a per-user runbook after every deploy.",
     keyDecisions:
       "OIDC over long-lived keys; single-YAML config as the source of truth.",
     stack: ["Terraform", "GitHub Actions (OIDC)", "AWS", "Python"],
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "Master's Thesis — A Failure Taxonomy of LLM-Generated Infrastructure-as-Code",
+    title: "Master's Thesis: A Failure Taxonomy of LLM-Generated Infrastructure-as-Code",
     problem:
       "LLMs generate Terraform that fails in ways nobody has systematically mapped.",
     description:

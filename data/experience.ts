@@ -61,9 +61,9 @@ export const education: Education[] = [
 
 export const publication = {
   title:
-    "Supplier Stock Movements as Predictors of Tesla's Stock Price — A Stacking Ensemble Approach",
+    "Supplier Stock Movements as Predictors of Tesla's Stock Price: A Stacking Ensemble Approach",
   venue: "Ohrid Conference, via SRH University of Berlin",
   description:
-    "Stacking ensemble model (LSTM + Random Forest → XGBoost meta-learner) exploring how supplier stock movements relate to Tesla's stock price.",
+    "A stacking ensemble model that combines LSTM and Random Forest predictions in an XGBoost meta-learner to explore how supplier stock movements relate to Tesla's stock price.",
   link: "https://github.com/GagandeepS017/tesla-supplier-prediction",
 } as const;

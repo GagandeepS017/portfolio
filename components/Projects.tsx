@@ -9,7 +9,7 @@ export default function Projects() {
       id="projects"
       number="01"
       title="Featured Projects"
-      subtitle="Built to ship, not just to demo — each one solves a real problem end to end."
+      subtitle="Built to ship, not just to demo. Each one solves a real problem end to end."
     >
       <div className="flex flex-col gap-8">
         {projects.map((project, i) => (

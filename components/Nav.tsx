@@ -31,7 +31,7 @@ export default function Nav() {
         <a
           href="#content"
           className="font-mono text-lg font-bold text-accent transition-opacity hover:opacity-80"
-          aria-label={`${site.name} — home`}
+          aria-label={`${site.name}, home`}
         >
           {site.initials}
           <span className="text-neutral-500">/</span>

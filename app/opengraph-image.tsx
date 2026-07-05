@@ -4,7 +4,7 @@ import { site } from "@/data/site";
 // Edge runtime: avoids a @vercel/og path bug on Windows dirs with spaces,
 // and renders the OG image on demand at Vercel's edge.
 export const runtime = "edge";
-export const alt = `${site.name} — ${site.title}`;
+export const alt = `${site.name} | ${site.title}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

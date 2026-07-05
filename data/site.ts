@@ -3,7 +3,7 @@ export const site = {
   initials: "GS",
   title: "AI/ML Engineer & Backend Developer",
   oneLiner:
-    "Backend engineer turned AI developer — I build LLM-powered applications, NLP pipelines, and cloud automation.",
+    "Backend engineer turned AI developer. I build LLM-powered applications, NLP pipelines, and cloud automation.",
   location: "Berlin, Germany",
   availability:
     "Open to Werkstudent, internship & full-time AI/ML roles in Germany",
@@ -14,7 +14,7 @@ export const site = {
   // Update this to your production domain after the first Vercel deploy.
   url: "https://gagandeep-portfolio.vercel.app",
   description:
-    "Portfolio of Gagandeep Shivanna — AI/ML Engineer & Backend Developer in Berlin. LLM-powered applications, NLP pipelines, and cloud automation. Open to Werkstudent, internship, and full-time roles in Germany.",
+    "Portfolio of Gagandeep Shivanna, AI/ML Engineer and Backend Developer in Berlin. LLM-powered applications, NLP pipelines, and cloud automation. Open to Werkstudent, internship, and full-time roles in Germany.",
   languages: [
     { name: "English", level: "C2" },
     { name: "German", level: "B1" },
@@ -33,14 +33,14 @@ export const stats = [
   { value: 2, suffix: "+", label: "Years professional experience" },
   { value: 4, suffix: "", label: "Featured projects" },
   { value: 1, suffix: "", label: "Conference publication" },
-  { value: 3, suffix: "", label: "Cloud platforms — AWS · Azure · GCP" },
+  { value: 3, suffix: "", label: "Cloud platforms (AWS, Azure, GCP)" },
 ] as const;
 
 export const services = [
   {
     title: "LLM & GenAI Applications",
     description:
-      "RAG pipelines, prompt engineering, eval harnesses, and Claude API integrations — built to ship, not just demo.",
+      "RAG pipelines, prompt engineering, eval harnesses, and Claude API integrations that make it to production.",
   },
   {
     title: "Backend & APIs",
