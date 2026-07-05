@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "Render",
     ],
     links: {
-      live: "https://datagrid-eta.vercel.app",
+      live: "https://datagrid.gagandeep.app",
       github: "https://github.com/GagandeepS017/Datagrid",
     },
   },
