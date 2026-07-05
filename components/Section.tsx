@@ -11,9 +11,9 @@ type SectionProps = {
 
 export default function Section({ id, number, title, subtitle, children }: SectionProps) {
   return (
-    <section id={id} aria-label={title} className="scroll-mt-28 py-20 sm:py-28">
+    <section id={id} aria-label={title} className="scroll-mt-28 py-14 sm:py-16">
       <Reveal>
-        <div className="mb-14 text-center">
+        <div className="mb-10 text-center">
           <p className="font-mono text-sm text-accent" aria-hidden>
             {number} <span className="text-neutral-600">//</span> {id}
           </p>

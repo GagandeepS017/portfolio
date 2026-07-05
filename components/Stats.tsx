@@ -36,9 +36,13 @@ function Counter({ value, suffix }: { value: number; suffix: string }) {
   );
 }
 
-export default function Stats() {
+export default function Stats({
+  className = "mb-14 grid grid-cols-2 gap-4 lg:grid-cols-4",
+}: {
+  className?: string;
+}) {
   return (
-    <dl className="mb-14 grid grid-cols-2 gap-4 lg:grid-cols-4">
+    <dl className={className}>
       {stats.map((stat) => (
         <div
           key={stat.label}

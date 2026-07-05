@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, ChevronDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { heroHighlights, site } from "@/data/site";
+import Stats from "./Stats";
 
 const phrases = [
   "LLM-powered applications.",
@@ -49,67 +50,6 @@ function useTypewriter(active: boolean) {
   }, [active]);
 
   return text;
-}
-
-function Terminal() {
-  const reduceMotion = useReducedMotion();
-  return (
-    <motion.div
-      aria-hidden
-      animate={reduceMotion ? undefined : { y: [0, -10, 0] }}
-      transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      className="w-full max-w-md"
-    >
-      <div className="overflow-hidden rounded-xl border border-neutral-800 bg-[#0d0d10]/90 shadow-2xl shadow-accent/10 backdrop-blur">
-        <div className="flex items-center gap-2 border-b border-neutral-800 px-4 py-3">
-          <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
-          <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
-          <span className="h-3 w-3 rounded-full bg-[#28c840]" />
-          <span className="mx-auto -translate-x-3 font-mono text-xs text-neutral-500">
-            gagandeep@berlin: ~/portfolio
-          </span>
-        </div>
-        <div className="p-5 font-mono text-[13px] leading-relaxed">
-          <p>
-            <span className="text-accent">$</span>{" "}
-            <span className="text-neutral-300">whoami</span>
-          </p>
-          <p className="text-neutral-400">backend engineer turned AI developer</p>
-          <p className="mt-3">
-            <span className="text-accent">$</span>{" "}
-            <span className="text-neutral-300">cat profile.json</span>
-          </p>
-          <pre className="mt-1 text-neutral-500">
-            {"{\n"}
-            {'  "base": '}
-            <span className="text-emerald-300">&quot;Berlin, DE&quot;</span>
-            {",\n"}
-            {'  "focus": ['}
-            <span className="text-emerald-300">&quot;LLM apps&quot;</span>,{" "}
-            <span className="text-emerald-300">&quot;NLP&quot;</span>,{" "}
-            <span className="text-emerald-300">&quot;IaC&quot;</span>
-            {"],\n"}
-            {'  "stack": ['}
-            <span className="text-emerald-300">&quot;Python&quot;</span>,{" "}
-            <span className="text-emerald-300">&quot;FastAPI&quot;</span>,{" "}
-            <span className="text-emerald-300">&quot;Claude API&quot;</span>
-            {"],\n"}
-            {'  "open_to": ['}
-            <span className="text-cyan-300">&quot;werkstudent&quot;</span>,{" "}
-            <span className="text-cyan-300">&quot;full-time&quot;</span>
-            {"],\n"}
-            {'  "coffee": '}
-            <span className="text-amber-300">true</span>
-            {"\n}"}
-          </pre>
-          <p className="mt-3">
-            <span className="text-accent">$</span>{" "}
-            <span className="cursor-blink text-neutral-300">▍</span>
-          </p>
-        </div>
-      </div>
-    </motion.div>
-  );
 }
 
 const container = {
@@ -257,9 +197,8 @@ export default function Hero() {
           initial={reduceMotion ? { opacity: 0 } : { opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.7, ease: "easeOut" }}
-          className="hidden justify-center lg:flex"
         >
-          <Terminal />
+          <Stats className="grid grid-cols-2 gap-4" />
         </motion.div>
       </div>
 

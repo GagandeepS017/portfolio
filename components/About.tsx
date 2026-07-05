@@ -2,19 +2,15 @@ import { GraduationCap, FlaskConical, MapPin, Languages } from "lucide-react";
 import { site } from "@/data/site";
 import Section from "./Section";
 import Reveal from "./Reveal";
-import Stats from "./Stats";
 
 export default function About() {
   return (
     <Section
       id="about"
       number="01"
-      title="Behind the Code"
+      title="About Me"
       subtitle="From enterprise Java in Bangalore to LLM research in Berlin."
     >
-      <Reveal>
-        <Stats />
-      </Reveal>
       <div className="grid gap-12 lg:grid-cols-5">
         <Reveal className="lg:col-span-3">
           <div className="space-y-4 leading-relaxed text-neutral-400">

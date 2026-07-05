@@ -14,6 +14,7 @@ export type Education = {
   period: string;
   location: string;
   details: string[];
+  logo?: string;
 };
 
 export const experience: Experience[] = [
@@ -45,6 +46,19 @@ export const experience: Experience[] = [
     ],
     tags: ["Java", "Spring Boot", "REST APIs", "Microservices", "Docker", "Jenkins"],
   },
+  {
+    role: "Software Engineer Intern",
+    company: "Vrize India Pvt Ltd",
+    period: "03/2022 – 07/2022",
+    location: "Bangalore, India",
+    logo: "/logos/vrize.png",
+    points: [
+      "Trained on Java and Spring Boot fundamentals, then contributed to enterprise client applications under senior engineer mentorship.",
+      "Worked across multiple teams on shared modules, picking up code review etiquette, Git workflows, and Agile ceremonies.",
+      "Converted to a full-time Associate Software Engineer offer at the end of the internship.",
+    ],
+    tags: ["Java", "Spring Boot", "Git", "Agile"],
+  },
 ];
 
 export const education: Education[] = [
@@ -53,6 +67,7 @@ export const education: Education[] = [
     school: "SRH University of Berlin",
     period: "07/2024 – Expected 09/2026",
     location: "Berlin, Germany",
+    logo: "/logos/srh.png",
     details: [
       "Coursework: Artificial Intelligence, Advanced Machine Learning, Cloud Solutions, Data Analytics, and AI Use Cases.",
       "Hands-on across AWS, Azure, and Google Cloud, backed by 30+ cloud and AI badges.",
@@ -64,6 +79,7 @@ export const education: Education[] = [
     school: "BMS College of Engineering, Bangalore",
     period: "2018 – 2022",
     location: "Bangalore, India",
+    logo: "/logos/bmsce.svg",
     details: [
       "Final grade 8.17 / 10 (EQF Level 6).",
       "Projects: NLP language detection (Naive Bayes), biomedical waste classification (ANN/VGG16), and a full-stack hospital management system (PHP/MySQL).",

@@ -22,7 +22,7 @@ export default function Particles() {
     let nodes: Node[] = [];
     const mouse = { x: -9999, y: -9999 };
     const LINK = 130;
-    const MOUSE_LINK = 180;
+    const MOUSE_LINK = 220;
     let raf = 0;
 
     const init = () => {
@@ -83,8 +83,8 @@ export default function Particles() {
 
         const md = Math.hypot(a.x - mouse.x, a.y - mouse.y);
         if (md < MOUSE_LINK) {
-          ctx.strokeStyle = `rgba(45,212,191,${(1 - md / MOUSE_LINK) * 0.28})`;
-          ctx.lineWidth = 1;
+          ctx.strokeStyle = `rgba(45,212,191,${(1 - md / MOUSE_LINK) * 0.45})`;
+          ctx.lineWidth = 1.2;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(mouse.x, mouse.y);

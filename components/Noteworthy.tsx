@@ -8,6 +8,8 @@ import {
   Github,
   ExternalLink,
   GitCommitHorizontal,
+  Crown,
+  ServerCog,
 } from "lucide-react";
 import { noteworthyProjects, type NoteworthyProject } from "@/data/noteworthy";
 import Reveal from "./Reveal";
@@ -18,6 +20,10 @@ type Cover = { Icon: ComponentType<{ className?: string }>; gradient: string };
 // individually.
 function coverFor(p: NoteworthyProject, i: number): Cover {
   const t = p.title.toLowerCase();
+  if (t.includes("mcp") || t.includes("server"))
+    return { Icon: ServerCog, gradient: "from-orange-500/25 to-accent/10" };
+  if (t.includes("chess"))
+    return { Icon: Crown, gradient: "from-amber-500/25 to-accent/10" };
   if (t.includes("deepfake"))
     return { Icon: ScanFace, gradient: "from-rose-500/25 to-accent/10" };
   if (t.includes("youtube") || t.includes("video"))
@@ -38,10 +44,10 @@ export default function Noteworthy() {
     <section
       id="noteworthy"
       aria-label="Other noteworthy projects"
-      className="scroll-mt-28 py-20 sm:py-24"
+      className="scroll-mt-28 py-14 sm:py-16"
     >
       <Reveal>
-        <div className="mb-12 text-center">
+        <div className="mb-10 text-center">
           <p className="font-mono text-xs uppercase tracking-widest text-accent">
             Beyond the featured work
           </p>
@@ -49,8 +55,8 @@ export default function Noteworthy() {
             Other Noteworthy Projects
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-neutral-500">
-            Academic and personal builds across computer vision and NLP. More
-            private beta projects coming soon.
+            Academic and personal builds across computer vision, NLP, and
+            developer tooling. Some are in private beta ahead of release.
           </p>
         </div>
       </Reveal>

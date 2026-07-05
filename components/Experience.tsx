@@ -89,11 +89,27 @@ export default function Experience() {
               key={edu.degree}
               className="group rounded-xl border border-neutral-800 bg-surface p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-[0_8px_40px_-12px_rgba(45,212,191,0.18)]"
             >
-              <p className="font-mono text-xs text-neutral-500">
-                {edu.period} · {edu.location}
-              </p>
-              <h4 className="mt-2 font-semibold text-neutral-100">{edu.degree}</h4>
-              <p className="mt-1 text-sm text-accent">{edu.school}</p>
+              <div className="flex items-start gap-4">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-neutral-700 bg-white/95">
+                  {edu.logo ? (
+                    <img
+                      src={edu.logo}
+                      alt={`${edu.school} logo`}
+                      className="h-10 w-10 object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <GraduationCap size={22} className="text-neutral-500" aria-hidden />
+                  )}
+                </div>
+                <div className="min-w-0">
+                  <p className="font-mono text-xs text-neutral-500">
+                    {edu.period} · {edu.location}
+                  </p>
+                  <h4 className="mt-1 font-semibold text-neutral-100">{edu.degree}</h4>
+                  <p className="mt-1 text-sm text-accent">{edu.school}</p>
+                </div>
+              </div>
               <ul className="mt-3 space-y-2">
                 {edu.details.map((detail) => (
                   <li
