@@ -11,8 +11,7 @@ export const site = {
   github: "https://github.com/GagandeepS017",
   linkedin: "https://www.linkedin.com/in/gagandeep-s017",
   resume: "/resume.pdf",
-  // Update this to your production domain after the first Vercel deploy.
-  url: "https://gagandeep-portfolio.vercel.app",
+  url: "https://gagandeep.app",
   description:
     "Portfolio of Gagandeep Shivanna, AI/ML Engineer and Backend Developer in Berlin. LLM-powered applications, NLP pipelines, and cloud automation. Open to Werkstudent, internship, and full-time roles in Germany.",
   languages: [
