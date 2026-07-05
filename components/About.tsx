@@ -6,7 +6,12 @@ import Stats from "./Stats";
 
 export default function About() {
   return (
-    <Section id="about" number="02" title="About">
+    <Section
+      id="about"
+      number="02"
+      title="Behind the Code"
+      subtitle="From enterprise Java in Bangalore to LLM research in Berlin."
+    >
       <Reveal>
         <Stats />
       </Reveal>
@@ -14,23 +19,31 @@ export default function About() {
         <Reveal className="lg:col-span-3">
           <div className="space-y-4 leading-relaxed text-neutral-400">
             <p>
-              I&apos;m a backend engineer turned AI developer with{" "}
+              My path didn&apos;t start with AI. It started with{" "}
               <span className="text-neutral-200">
-                2+ years of professional experience
+                two years of enterprise Java/Spring Boot
               </span>{" "}
-              building enterprise Java/Spring Boot systems, now focused on{" "}
-              <span className="text-accent">GenAI, LLM applications, and cloud automation</span>.
+              at Vrize in Bangalore — real production systems for real clients,
+              where a bad deploy meant angry users, not a failed notebook cell.
+              That&apos;s where I learned to care about testing, CI/CD, and code
+              that other people can maintain.
             </p>
             <p>
-              Currently an M.Sc. Big Data &amp; AI student at SRH University
-              Berlin (graduating Sept 2026) and a Research Assistant building
-              NLP pipelines under Prof. Dr. Alexander Iliev.
+              Then LLMs changed what software could do, and I wanted in — not
+              as a spectator. So I moved to Berlin for an{" "}
+              <span className="text-neutral-200">M.Sc. in Big Data &amp; AI</span>{" "}
+              at SRH (graduating Sept 2026), where I now also work as a{" "}
+              <span className="text-neutral-200">Research Assistant</span>{" "}
+              building NLP pipelines under Prof. Dr. Alexander Iliev.
             </p>
             <p>
-              My work spans NLP pipelines, async AI platforms, and
-              Infrastructure-as-Code workflows — the through-line is taking
-              things from prototype to production: sandboxed execution, eval
-              harnesses, CI/CD, and deploys that stay up.
+              The result is a rare combination:{" "}
+              <span className="text-accent">
+                I build AI products with backend-engineer discipline
+              </span>{" "}
+              — sandboxed execution, eval harnesses, streaming APIs, and
+              Terraform-managed infrastructure. Prototypes are easy; things
+              that stay up are not.
             </p>
           </div>
         </Reveal>

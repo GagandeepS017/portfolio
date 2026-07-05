@@ -5,7 +5,12 @@ import Reveal from "./Reveal";
 
 export default function Publication() {
   return (
-    <Section id="publication" number="05" title="Publication">
+    <Section
+      id="publication"
+      number="05"
+      title="Publication"
+      subtitle="Peer-reviewed research, presented at an international conference."
+    >
       <Reveal>
         <article className="relative overflow-hidden rounded-lg border border-accent/30 bg-gradient-to-br from-surface to-accent/[0.04] p-8 sm:p-10">
           <BookOpen

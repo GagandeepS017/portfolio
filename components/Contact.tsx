@@ -7,7 +7,12 @@ const serviceIcons = [Sparkles, Server, Cloud, Database];
 
 export default function Contact() {
   return (
-    <Section id="contact" number="06" title="Get In Touch">
+    <Section
+      id="contact"
+      number="06"
+      title="Let's Work Together"
+      subtitle="Hiring, collaborating, or just curious about a project — say hi."
+    >
       <Reveal>
         <h3 className="text-center font-mono text-xs uppercase tracking-widest text-neutral-500">
           What I can help you with

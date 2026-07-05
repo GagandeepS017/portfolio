@@ -5,7 +5,12 @@ import Reveal from "./Reveal";
 
 export default function Experience() {
   return (
-    <Section id="experience" number="03" title="Experience">
+    <Section
+      id="experience"
+      number="03"
+      title="Experience"
+      subtitle="From enterprise sprints in Bangalore to research in Berlin."
+    >
       <ol className="relative ml-2 space-y-12 border-l border-neutral-800 pl-8">
         {experience.map((job, i) => (
           <li key={`${job.company}-${job.role}`} className="relative">
