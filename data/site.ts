@@ -30,9 +30,9 @@ export const heroHighlights = [
 
 export const stats = [
   { value: 2, suffix: "+", label: "Years professional experience" },
-  { value: 4, suffix: "", label: "Featured projects" },
-  { value: 1, suffix: "", label: "Conference publication" },
-  { value: 3, suffix: "", label: "Cloud platforms (AWS, Azure, GCP)" },
+  { value: 10, suffix: "+", label: "Projects built" },
+  { value: 30, suffix: "+", label: "Cloud & AI badges earned" },
+  { value: 40, suffix: "+", label: "Technologies learned" },
 ] as const;
 
 export const services = [
@@ -59,9 +59,10 @@ export const services = [
 ] as const;
 
 export const navLinks = [
-  { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ] as const;

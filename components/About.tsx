@@ -8,7 +8,7 @@ export default function About() {
   return (
     <Section
       id="about"
-      number="02"
+      number="01"
       title="Behind the Code"
       subtitle="From enterprise Java in Bangalore to LLM research in Berlin."
     >

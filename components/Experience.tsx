@@ -1,4 +1,4 @@
-import { GraduationCap } from "lucide-react";
+import { Building2, GraduationCap } from "lucide-react";
 import { education, experience } from "@/data/experience";
 import Section from "./Section";
 import Reveal from "./Reveal";
@@ -7,36 +7,72 @@ export default function Experience() {
   return (
     <Section
       id="experience"
-      number="03"
+      number="02"
       title="Experience"
-      subtitle="From enterprise sprints in Bangalore to research in Berlin."
+      subtitle="From enterprise sprints in Bangalore to AI research in Berlin."
     >
-      <ol className="relative ml-2 space-y-12 border-l border-neutral-800 pl-8">
+      <ol className="relative space-y-6 before:absolute before:left-[27px] before:top-4 before:bottom-4 before:w-px before:bg-gradient-to-b before:from-accent/50 before:via-neutral-800 before:to-transparent">
         {experience.map((job, i) => (
           <li key={`${job.company}-${job.role}`} className="relative">
-            <span
-              className="absolute -left-[37px] top-1.5 h-3 w-3 rounded-full border-2 border-accent bg-background"
-              aria-hidden
-            />
             <Reveal delay={i * 0.05}>
-              <p className="font-mono text-xs text-neutral-500">
-                {job.period} · {job.location}
-              </p>
-              <h3 className="mt-1 text-lg font-semibold text-neutral-100">
-                {job.role}{" "}
-                <span className="text-accent">@ {job.company}</span>
-              </h3>
-              <ul className="mt-3 max-w-3xl space-y-2">
-                {job.points.map((point) => (
-                  <li
-                    key={point}
-                    className="flex gap-3 text-sm leading-relaxed text-neutral-400"
-                  >
-                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" aria-hidden />
-                    {point}
-                  </li>
-                ))}
-              </ul>
+              <div className="group flex gap-4 rounded-xl border border-neutral-800 bg-surface p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-[0_8px_40px_-12px_rgba(45,212,191,0.18)] sm:p-6">
+                {/* Company logo on a light tile so brand marks read on dark. */}
+                <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-neutral-700 bg-white/95 ring-4 ring-background">
+                  {job.logo ? (
+                    <img
+                      src={job.logo}
+                      alt={`${job.company} logo`}
+                      className="h-9 w-9 object-contain"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <Building2 size={22} className="text-neutral-500" aria-hidden />
+                  )}
+                </div>
+
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+                    <h3 className="text-lg font-semibold text-neutral-100">
+                      {job.role}
+                    </h3>
+                    <span className="font-mono text-xs text-neutral-500">
+                      {job.period}
+                    </span>
+                  </div>
+                  <p className="mt-0.5 font-mono text-sm text-accent">
+                    {job.company}
+                    <span className="ml-2 text-neutral-600">· {job.location}</span>
+                  </p>
+
+                  <ul className="mt-3 space-y-2">
+                    {job.points.map((point) => (
+                      <li
+                        key={point}
+                        className="flex gap-3 text-sm leading-relaxed text-neutral-400"
+                      >
+                        <span
+                          className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent"
+                          aria-hidden
+                        />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {job.tags && (
+                    <ul className="mt-4 flex flex-wrap gap-2">
+                      {job.tags.map((tag) => (
+                        <li
+                          key={tag}
+                          className="rounded-full border border-neutral-800 bg-neutral-900 px-2.5 py-0.5 font-mono text-[11px] text-neutral-400 transition-colors group-hover:border-accent/30 group-hover:text-neutral-300"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
             </Reveal>
           </li>
         ))}
@@ -51,18 +87,27 @@ export default function Experience() {
           {education.map((edu) => (
             <div
               key={edu.degree}
-              className="rounded-lg border border-neutral-800 bg-surface p-6 transition-colors hover:border-neutral-700"
+              className="group rounded-xl border border-neutral-800 bg-surface p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-[0_8px_40px_-12px_rgba(45,212,191,0.18)]"
             >
               <p className="font-mono text-xs text-neutral-500">
                 {edu.period} · {edu.location}
               </p>
               <h4 className="mt-2 font-semibold text-neutral-100">{edu.degree}</h4>
               <p className="mt-1 text-sm text-accent">{edu.school}</p>
-              {edu.details.map((detail) => (
-                <p key={detail} className="mt-2 text-sm text-neutral-400">
-                  {detail}
-                </p>
-              ))}
+              <ul className="mt-3 space-y-2">
+                {edu.details.map((detail) => (
+                  <li
+                    key={detail}
+                    className="flex gap-2.5 text-sm leading-relaxed text-neutral-400"
+                  >
+                    <span
+                      className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent"
+                      aria-hidden
+                    />
+                    {detail}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

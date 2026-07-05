@@ -42,7 +42,7 @@ export default function Stats() {
       {stats.map((stat) => (
         <div
           key={stat.label}
-          className="rounded-lg border border-neutral-800 bg-surface p-6 text-center transition-colors hover:border-accent/40"
+          className="rounded-lg border border-neutral-800 bg-surface p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_8px_40px_-12px_rgba(45,212,191,0.2)]"
         >
           <dd className="font-mono text-4xl font-bold text-accent">
             <Counter value={stat.value} suffix={stat.suffix} />

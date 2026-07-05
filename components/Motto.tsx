@@ -15,7 +15,7 @@ export default function Motto() {
           Prototype fast. Ship to production. Measure everything.
         </blockquote>
         <figcaption className="mt-5 font-mono text-xs uppercase tracking-widest text-neutral-500">
-          The rule behind every project below
+          The rule behind everything I build
         </figcaption>
       </figure>
     </Reveal>

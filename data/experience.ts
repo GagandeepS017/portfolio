@@ -4,6 +4,8 @@ export type Experience = {
   period: string;
   location: string;
   points: string[];
+  logo?: string;
+  tags?: string[];
 };
 
 export type Education = {
@@ -20,16 +22,20 @@ export const experience: Experience[] = [
     company: "SRH University of Berlin",
     period: "09/2025 – 04/2026",
     location: "Berlin, Germany",
+    logo: "/logos/srh.png",
     points: [
-      "Built and evaluated NLP pipelines for document classification and information extraction, applying prompt engineering and RAG under Prof. Dr. Alexander Iliev.",
+      "Built and evaluated NLP pipelines for document classification and information extraction under Prof. Dr. Alexander Iliev.",
+      "Applied prompt engineering and retrieval-augmented generation (RAG) to improve extraction accuracy on domain documents.",
       "Synthesized research across cognitive science and AI ethics into structured academic writing.",
     ],
+    tags: ["NLP", "RAG", "Prompt Engineering", "Python", "Research"],
   },
   {
     role: "Associate Software Engineer",
     company: "Vrize India Pvt Ltd",
     period: "09/2022 – 07/2024",
     location: "Bangalore, India",
+    logo: "/logos/vrize.png",
     points: [
       "Developed enterprise Java/Spring Boot applications (Zaxby's, Tonic): scalable RESTful APIs and microservices across MySQL & MongoDB.",
       "Architected modular backend services with Dependency Injection and AOP patterns to reduce coupling across service layers.",
@@ -37,6 +43,7 @@ export const experience: Experience[] = [
       "Automated deployment pipelines with Docker + Jenkins CI/CD, reducing manual release overhead across environments.",
       "Delivered in Agile sprint cycles, recognized for technical ownership and cross-functional collaboration.",
     ],
+    tags: ["Java", "Spring Boot", "REST APIs", "Microservices", "Docker", "Jenkins"],
   },
 ];
 
@@ -47,7 +54,9 @@ export const education: Education[] = [
     period: "07/2024 – Expected 09/2026",
     location: "Berlin, Germany",
     details: [
-      "Cloud across AWS, Azure & GCP; ML, deep learning, data engineering, distributed systems.",
+      "Coursework: Artificial Intelligence, Advanced Machine Learning, Cloud Solutions, Data Analytics, and AI Use Cases.",
+      "Hands-on across AWS, Azure, and Google Cloud, backed by 30+ cloud and AI badges.",
+      "Led AI projects and research: deepfake detection (CNN/GAN), graph-based stock prediction, and NLP video discovery on GCP.",
     ],
   },
   {
@@ -55,15 +64,18 @@ export const education: Education[] = [
     school: "BMS College of Engineering, Bangalore",
     period: "2018 – 2022",
     location: "Bangalore, India",
-    details: ["CGPA 8.17"],
+    details: [
+      "Final grade 8.17 / 10 (EQF Level 6).",
+      "Projects: NLP language detection (Naive Bayes), biomedical waste classification (ANN/VGG16), and a full-stack hospital management system (PHP/MySQL).",
+    ],
   },
 ];
 
 export const publication = {
-  title:
-    "Supplier Stock Movements as Predictors of Tesla's Stock Price: A Stacking Ensemble Approach",
+  title: "Leveraging Supplier Stock Dynamics to Predict Tesla's Market Performance",
   venue: "Ohrid Conference, via SRH University of Berlin",
   description:
     "A stacking ensemble model that combines LSTM and Random Forest predictions in an XGBoost meta-learner to explore how supplier stock movements relate to Tesla's stock price.",
   link: "https://github.com/GagandeepS017/tesla-supplier-prediction",
+  paper: "/tesla-supplier-paper.pdf",
 } as const;

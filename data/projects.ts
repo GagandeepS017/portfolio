@@ -9,6 +9,8 @@ export type Project = {
     github?: string;
   };
   status?: string;
+  // Screenshot for the card. When absent, a gradient cover is rendered instead.
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -34,6 +36,7 @@ export const projects: Project[] = [
       live: "https://datagrid.gagandeep.app",
       github: "https://github.com/GagandeepS017/Datagrid",
     },
+    image: "/projects/datagrid.png",
   },
   {
     title: "AsyncMeet (MANAN): AI Async Decision-Making Platform",
