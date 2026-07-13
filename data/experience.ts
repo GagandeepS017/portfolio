@@ -19,6 +19,19 @@ export type Education = {
 
 export const experience: Experience[] = [
   {
+    role: "AI Trainer Analyst (Freelance)",
+    company: "Sovrano AI",
+    period: "06/2026 – Present",
+    location: "Remote",
+    logo: "/logos/sovrano.svg",
+    points: [
+      "Own end-to-end handling of assigned tickets, from creating structured training data to performing QA and reasoning-based evaluation, ensuring each output meets accuracy, relevance, and safety standards.",
+      "Apply domain expertise and critical reasoning to compare and rate model responses in RLHF-style side-by-side evaluation, selecting and annotating the stronger output to reinforce desired model behavior.",
+      "Maintain rigorous quality benchmarks through gold-standard tasks and self-audits of borderline cases, upholding data integrity and consistency against defined rubrics.",
+    ],
+    tags: ["RLHF", "Model Evaluation", "Data Annotation", "LLM QA", "AI Safety"],
+  },
+  {
     role: "Research Assistant",
     company: "SRH University of Berlin",
     period: "09/2025 – 04/2026",
