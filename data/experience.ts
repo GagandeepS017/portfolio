@@ -19,7 +19,7 @@ export type Education = {
 
 export const experience: Experience[] = [
   {
-    role: "AI Trainer Analyst (Freelance)",
+    role: "AI Trainer Analyst",
     company: "Sovrano AI",
     period: "06/2026 – Present",
     location: "Remote",
@@ -45,7 +45,7 @@ export const experience: Experience[] = [
     tags: ["NLP", "RAG", "Prompt Engineering", "Python", "Research"],
   },
   {
-    role: "Associate Software Engineer",
+    role: "Backend Engineer",
     company: "Vrize India Pvt Ltd",
     period: "09/2022 – 07/2024",
     location: "Bangalore, India",
@@ -68,7 +68,7 @@ export const experience: Experience[] = [
     points: [
       "Trained on Java and Spring Boot fundamentals, then contributed to enterprise client applications under senior engineer mentorship.",
       "Worked across multiple teams on shared modules, picking up code review etiquette, Git workflows, and Agile ceremonies.",
-      "Converted to a full-time Associate Software Engineer offer at the end of the internship.",
+      "Converted to a full-time Backend Engineer offer at the end of the internship.",
     ],
     tags: ["Java", "Spring Boot", "Git", "Agile"],
   },
