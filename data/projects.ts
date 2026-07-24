@@ -70,11 +70,22 @@ export const projects: Project[] = [
   {
     title: "Master's Thesis: A Failure Taxonomy of LLM-Generated Infrastructure-as-Code",
     problem:
-      "LLMs generate Terraform that fails in ways nobody has systematically mapped.",
+      "Self-repair improves LLM-generated Terraform, but nobody has mapped which failures it fixes and which survive every retry.",
     description:
-      "Research into LLM self-repair of Terraform across syntax, security, and policy verification stages, with a PRISMA-style literature-review pipeline built on arXiv/OpenAlex APIs.",
-    stack: ["Python", "arXiv/OpenAlex APIs", "Terraform", "LLM evaluation"],
+      "An empirical study of whether LLMs can self-repair the Terraform they write. A local pipeline verifies each config across syntax, security (Checkov + tfsec), and policy (Conftest/OPA) stages, then feeds structured errors back to the model for up to 10 repair rounds — logging ~2,000 errors across 542 runs over GPT-4o, Claude, and Llama 3.1. The result is a failure taxonomy of which error categories survive repair and why: a controlled experiment showing feedback quality causally drives repair success (McNemar p < 0.001), evidence that repair resistance is model-conditioned, and a repair-integrity classifier that catches models faking fixes by deleting the flagged resource — validated against the IaC-Eval (NeurIPS 2024) benchmark.",
+    keyDecisions:
+      "Prompt-based repair, no fine-tuning, to isolate feedback as the sole variable; four independent referees (Terraform validate/plan, Checkov, tfsec, Conftest/OPA) so a fix can't be faked by silencing one scanner; two benchmark tiers — ported IaC-Eval tasks plus reverse-engineered production scenarios — with calibrated gold references.",
+    stack: [
+      "Python",
+      "Terraform",
+      "Checkov",
+      "tfsec",
+      "OPA/Conftest",
+      "OpenAI / Anthropic / Ollama",
+      "React",
+      "Statistics (McNemar, log-rank)",
+    ],
     links: {},
-    status: "In Progress",
+    status: "Writing up",
   },
 ];
