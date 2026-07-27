@@ -3,7 +3,7 @@ export const site = {
   initials: "GS",
   title: "AI/ML Engineer & Backend Developer",
   oneLiner:
-    "Backend engineer turned AI developer. I build LLM-powered applications, NLP pipelines, and cloud automation.",
+    "Backend engineer turned AI developer. I build LLM applications, RAG pipelines, and evaluation harnesses — with production backend discipline.",
   location: "Berlin, Germany",
   availability:
     "Open to Werkstudent, internship & full-time AI/ML roles in Germany",

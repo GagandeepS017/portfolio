@@ -35,6 +35,8 @@ import {
   SiGit,
   SiJira,
   SiJupyter,
+  SiOllama,
+  SiConfluence,
 } from "react-icons/si";
 import { FaAws, FaJava } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
@@ -61,6 +63,8 @@ const iconMap: Record<string, Icon> = {
   Transformers: SiHuggingface,
   "Claude API": SiAnthropic,
   LangChain: SiLangchain,
+  Ollama: SiOllama,
+  Confluence: SiConfluence,
   NumPy: SiNumpy,
   Pandas: SiPandas,
   SciPy: SiScipy,

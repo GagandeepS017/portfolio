@@ -28,16 +28,26 @@ export default function About() {
               Then LLMs changed what software could do, and I wanted in, not
               as a spectator. So I moved to Berlin for an{" "}
               <span className="text-neutral-200">M.Sc. in Big Data &amp; AI</span>{" "}
-              at SRH (graduating Sept 2026), where I now also work as a{" "}
+              at SRH (graduating Sept 2026), where I also work as a{" "}
               <span className="text-neutral-200">Research Assistant</span>{" "}
-              building NLP pipelines under Prof. Dr. Alexander Iliev.
+              building end-to-end{" "}
+              <span className="text-neutral-200">RAG pipelines</span> — ChromaDB
+              retrieval, chunking and embedding tuning, and structured
+              extraction.
             </p>
             <p>
-              The result is a rare combination:{" "}
+              Today I&apos;m focused on{" "}
+              <span className="text-neutral-200">
+                LLM evaluation, retrieval, and GenAI features that survive
+                contact with real users
+              </span>
+              , and my master&apos;s thesis is an empirical study of
+              verifier-guided LLM self-repair across three frontier models. The
+              result is a rare combination:{" "}
               <span className="text-accent">
                 I build AI products with backend-engineer discipline
               </span>
-              : sandboxed execution, eval harnesses, streaming APIs, and
+              — sandboxed execution, eval harnesses, streaming APIs, and
               Terraform-managed infrastructure. Prototypes are easy. Things
               that stay up are not.
             </p>
@@ -50,7 +60,7 @@ export default function About() {
               <GraduationCap size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden />
               <span className="text-neutral-300">
                 M.Sc. Big Data &amp; AI, SRH Berlin
-                <span className="block text-xs text-neutral-500">Graduating Sept 2026</span>
+                <span className="block text-xs text-neutral-500">Graduating Sept 2026 · CGPA 1.4</span>
               </span>
             </li>
             <li className="flex items-start gap-3">

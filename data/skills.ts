@@ -5,31 +5,50 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Languages",
-    skills: ["Python", "Java", "JavaScript/TypeScript", "C", "C++"],
+    label: "Programming",
+    skills: ["Python", "Java", "JavaScript/TypeScript", "SQL", "C", "C++"],
   },
   {
-    label: "AI/ML",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "XGBoost", "Keras", "MLflow"],
-  },
-  {
-    label: "NLP & GenAI",
+    label: "LLM & GenAI",
     skills: [
-      "Transformers",
-      "BERT",
       "RAG",
-      "Prompt Engineering",
-      "Claude API",
       "LangChain",
-      "SSE Streaming",
+      "Claude API",
+      "OpenAI API",
+      "Ollama",
+      "Prompt Engineering",
+      "Agent Workflows",
     ],
   },
   {
-    label: "Data",
-    skills: ["NumPy", "Pandas", "Matplotlib", "SciPy", "OpenCV", "DuckDB", "SDV"],
+    label: "Vector & Retrieval",
+    skills: ["ChromaDB", "Embeddings", "Semantic Search", "Chunking Strategy"],
   },
   {
-    label: "Backend",
+    label: "LLM Evaluation",
+    skills: [
+      "Eval Harness Design",
+      "RLHF Preference Data",
+      "Rubric Design",
+      "MLflow",
+      "Text-to-SQL Eval",
+    ],
+  },
+  {
+    label: "AI/ML",
+    skills: [
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "XGBoost",
+      "Keras",
+      "Transformers",
+      "BERT",
+      "LSTMs",
+    ],
+  },
+  {
+    label: "Development",
     skills: [
       "Spring Boot",
       "FastAPI",
@@ -59,10 +78,18 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Testing",
-    skills: ["JUnit", "pytest", "Cross-validation", "Test Automation", "Text-to-SQL Eval"],
+    skills: [
+      "JUnit",
+      "pytest",
+      "Checkov",
+      "tfsec",
+      "OPA/Rego",
+      "Cross-validation",
+      "Test Automation",
+    ],
   },
   {
     label: "Tools",
-    skills: ["Git", "Jira", "PowerBI", "Tableau", "Jupyter", "Recharts"],
+    skills: ["Git", "Jira", "PowerBI", "Tableau", "VS Code", "Confluence", "Jupyter", "Recharts"],
   },
 ];
