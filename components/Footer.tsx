@@ -44,6 +44,14 @@ export default function Footer() {
                 Resume
               </a>
             </li>
+            <li>
+              <a
+                href="/print"
+                className="text-sm text-neutral-400 transition-colors hover:text-accent"
+              >
+                Portfolio (PDF)
+              </a>
+            </li>
           </ul>
         </nav>
 
