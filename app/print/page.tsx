@@ -9,7 +9,7 @@ import { certifications, issuerTotals, issuerProfiles } from "@/data/certificati
 import PrintButton from "@/components/PrintButton";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Work Sample",
+  title: "Portfolio Work Sample",
   // A print-only mirror of the site content; keep it out of search indexes to
   // avoid duplicate-content with the main page.
   robots: { index: false, follow: true },
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 // A condensed professional summary, distilled from the About section into
 // plain prose suitable for a static document.
 const summary = [
-  "Backend engineer turned AI developer. My path started with two years of enterprise Java/Spring Boot at Vrize in Bangalore — real production systems for real clients, where testing, CI/CD, and maintainable code mattered more than a passing notebook cell.",
-  "Now I'm focused on LLM evaluation, RAG pipelines, and shipping GenAI features that survive contact with real users. I moved to Berlin for an M.Sc. in Big Data & AI at SRH (graduating Sept 2026), where I also work as a Research Assistant building retrieval pipelines. My master's thesis is an empirical study of verifier-guided LLM self-repair across three frontier models — built with backend discipline: sandboxed execution, eval harnesses, streaming APIs, and Infrastructure-as-Code.",
+  "Backend engineer turned AI developer. My path started with two years of enterprise Java/Spring Boot at Vrize in Bangalore, real production systems for real clients, where testing, CI/CD, and maintainable code mattered more than a passing notebook cell.",
+  "Now I'm focused on LLM evaluation, RAG pipelines, and shipping GenAI features that survive contact with real users. I moved to Berlin for an M.Sc. in Big Data & AI at SRH (graduating Sept 2026), where I also work as a Research Assistant building retrieval pipelines. My master's thesis is an empirical study of verifier-guided LLM self-repair across three frontier models, built with backend discipline: sandboxed execution, eval harnesses, streaming APIs, and Infrastructure-as-Code.",
 ];
 
 function Heading({ children }: { children: React.ReactNode }) {

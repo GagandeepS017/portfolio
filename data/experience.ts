@@ -82,7 +82,7 @@ export const education: Education[] = [
     location: "Berlin, Germany",
     logo: "/logos/srh.png",
     details: [
-      "Master's thesis: a failure taxonomy of LLM-generated Infrastructure-as-Code — a three-stage verifier (Terraform, Checkov, tfsec, OPA/Rego) plus an automated self-repair loop across 542 runs and three models, with survival analysis over 2,000+ logged errors.",
+      "Master's thesis: a failure taxonomy of LLM-generated Infrastructure-as-Code, a three-stage verifier (Terraform, Checkov, tfsec, OPA/Rego) plus an automated self-repair loop across 542 runs and three models, with survival analysis over 2,000+ logged errors.",
       "Coursework across machine learning, deep learning, cloud, and data engineering; hands-on with AWS, Azure, and GCP, backed by 30+ cloud and AI badges.",
       "Current CGPA 1.4 on the German 1.0–5.0 scale (1.0 = best).",
     ],

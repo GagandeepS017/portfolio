@@ -6,7 +6,7 @@ export default function Ambient() {
       aria-hidden
       className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
     >
-      {/* Aurora blobs — soft, blurred, slowly drifting. */}
+      {/* Aurora blobs: soft, blurred, slowly drifting. */}
       <div className="animate-aurora-a absolute -left-40 -top-40 h-[38rem] w-[38rem] rounded-full bg-accent/[0.10] blur-[130px]" />
       <div className="animate-aurora-b absolute -right-52 top-1/3 h-[34rem] w-[34rem] rounded-full bg-cyan-500/[0.08] blur-[130px]" />
       <div className="animate-aurora-a absolute bottom-[-12rem] left-1/3 h-[32rem] w-[32rem] rounded-full bg-indigo-500/[0.07] blur-[140px]" />

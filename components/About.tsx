@@ -31,7 +31,7 @@ export default function About() {
               at SRH (graduating Sept 2026), where I also work as a{" "}
               <span className="text-neutral-200">Research Assistant</span>{" "}
               building end-to-end{" "}
-              <span className="text-neutral-200">RAG pipelines</span> — ChromaDB
+              <span className="text-neutral-200">RAG pipelines</span>, ChromaDB
               retrieval, chunking and embedding tuning, and structured
               extraction.
             </p>
@@ -47,7 +47,7 @@ export default function About() {
               <span className="text-accent">
                 I build AI products with backend-engineer discipline
               </span>
-              — sandboxed execution, eval harnesses, streaming APIs, and
+              {": "}sandboxed execution, eval harnesses, streaming APIs, and
               Terraform-managed infrastructure. Prototypes are easy. Things
               that stay up are not.
             </p>
