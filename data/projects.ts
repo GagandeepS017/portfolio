@@ -73,18 +73,18 @@ export const projects: Project[] = [
     problem:
       "Self-repair improves LLM-generated Terraform, but nobody has mapped which failures it fixes and which survive every retry.",
     description:
-      "An empirical study of whether LLMs can self-repair the Terraform they write. A local pipeline verifies each config across syntax, security (Checkov + tfsec), and policy (Conftest/OPA) stages, then feeds structured errors back to the model for up to 10 repair rounds, logging ~2,000 errors across 542 runs over GPT-4o, Claude, and Llama 3.1. The result is a failure taxonomy of which error categories survive repair and why: a controlled experiment showing feedback quality causally drives repair success (McNemar p < 0.001), evidence that repair resistance is model-conditioned, and a repair-integrity classifier that catches models faking fixes by deleting the flagged resource, validated against the IaC-Eval (NeurIPS 2024) benchmark.",
+      "An empirical study of whether LLMs can self-repair the Terraform they write. A pipeline generates Terraform, checks it against four independent referees (syntax/plan, security via Checkov + tfsec, org policy via OPA/Conftest, and a completeness check), then feeds the errors back for up to 10 repair rounds: 560 runs across 50 scenarios, 3 seeds, and three models, logging 2,068 errors down to the rule and round. The headline finding is a capability ladder, not a single aggregate number: Claude Sonnet 5 resolves 95% of tasks and fails only on unfamiliar resource types, GPT-4o resolves 53% and fails specifically on cross-resource reasoning like networking, and Llama 3.1 resolves 9% and fails to converge at all. A controlled experiment isolating feedback quality as the only variable shows detailed error messages causally drive repair success (McNemar p < 0.0001), and a repair-integrity classifier that diffs code before and after each fix found the frontier models never cheat by deleting a required resource, only the weakest model does. Reproduced against the IaC-Eval (NeurIPS 2024) benchmark: the one-shot GPT-4o score (21%) matches their published 19.36%, and repair lifts it to 45%.",
     keyDecisions:
-      "Prompt-based repair, no fine-tuning, to isolate feedback as the sole variable; four independent referees (Terraform validate/plan, Checkov, tfsec, Conftest/OPA) so a fix can't be faked by silencing one scanner; two benchmark tiers, ported IaC-Eval tasks plus reverse-engineered production scenarios, with calibrated gold references.",
+      "Prompt-based repair, no fine-tuning, to isolate feedback as the sole variable; four independent referees, including a completeness check, so a fix can't be faked by deleting the flagged resource; a 10-iteration cap matching prior work (IaCGen) for comparability; two benchmark tiers, ported IaC-Eval tasks plus reverse-engineered production scenarios, with calibrated gold references.",
     stack: [
       "Python",
       "Terraform",
       "Checkov",
       "tfsec",
       "OPA/Conftest",
-      "OpenAI / Anthropic / Ollama",
+      "GPT-4o / Claude Sonnet / Llama 3.1",
       "React",
-      "Statistics (McNemar, log-rank)",
+      "Statistics (McNemar, survival analysis)",
     ],
     links: {},
     status: "Writing up",
