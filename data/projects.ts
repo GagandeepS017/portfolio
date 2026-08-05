@@ -54,6 +54,7 @@ export const projects: Project[] = [
     ],
     links: {},
     status: "Active Development",
+    image: "/projects/asyncmeet.png",
   },
   {
     title: "AWS Account Onboarding Automation",
