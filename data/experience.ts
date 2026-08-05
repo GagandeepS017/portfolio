@@ -19,15 +19,15 @@ export type Education = {
 
 export const experience: Experience[] = [
   {
-    role: "AI Trainer Analyst",
+    role: "AI Trainer Analyst Intern",
     company: "Sovrano AI",
-    period: "06/2026 – Present",
+    period: "05/2026 – 08/2026",
     location: "Remote",
     logo: "/logos/sovrano.svg",
     points: [
-      "Designed and applied a rubric-based evaluation methodology for LLM output quality across accuracy, relevance, and safety, building gold-standard reference sets used to score model responses.",
-      "Ran structured side-by-side RLHF-style model comparisons and pairwise preference evaluation, producing the labelled preference data used for reward-model training.",
-      "Authored intent-level task decomposition specs for multi-step agent workflows, improving inter-annotator consistency across the evaluation pipeline.",
+      "Curate and author high-quality training data for LLM fine-tuning, writing gold-standard reference responses scored against a rubric spanning accuracy, relevance, and safety.",
+      "Produce labelled preference data through structured side-by-side model comparisons, generating the ranked response pairs consumed downstream for reward-model training.",
+      "Define annotation guidelines and intent-level task decomposition specs for multi-step agent workflows, raising inter-annotator agreement and dataset consistency across the pipeline.",
     ],
     tags: ["RLHF", "Model Evaluation", "Preference Data", "Agent Workflows", "Rubric Design"],
   },
