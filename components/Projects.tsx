@@ -7,6 +7,7 @@ import {
   MessagesSquare,
   ServerCog,
   BookOpenText,
+  FileText,
 } from "lucide-react";
 import { projects, type Project } from "@/data/projects";
 import Section from "./Section";
@@ -18,6 +19,8 @@ function coverFor(project: Project): { Icon: LucideIcon; gradient: string } {
   const t = project.title.toLowerCase();
   if (t.includes("asyncmeet") || t.includes("manan"))
     return { Icon: MessagesSquare, gradient: "from-violet-500/25 to-cyan-500/10" };
+  if (t.includes("job search"))
+    return { Icon: FileText, gradient: "from-emerald-500/25 to-cyan-500/10" };
   if (t.includes("aws"))
     return { Icon: ServerCog, gradient: "from-amber-500/25 to-accent/10" };
   if (t.includes("thesis"))

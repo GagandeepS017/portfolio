@@ -57,6 +57,25 @@ export const projects: Project[] = [
     image: "/projects/asyncmeet.png",
   },
   {
+    title: "Job Search Automation: Resume Tailoring on Claude Code",
+    problem:
+      "Fitting a resume and cover letter to every posting by hand takes longer than applying, and an LLM left to write them freely will invent experience.",
+    description:
+      "A local web app where I paste a job description and get back a tailored resume PDF, a cover letter PDF, the LaTeX sources, and a blunt match report. It drives the Claude Code CLI as a subprocess with a JSON schema for structured output, then compiles the LaTeX itself and judges success by the log and page count, never by trusting the model. Content is drawn from a curated fact bank under hard honesty rules (no invented employers, titles, dates, or metrics), and anything beyond it is listed in the report as unverified, with the weaknesses and red flags, for me to check before anything is sent. 144 runs between September and October 2026, a median of about six minutes and 17 agent turns each, with a Germany and India mode and eight ready-made role-specific CVs built from the same master. Reachable from my phone over Tailscale. Next is job discovery and form filling for Greenhouse, Ashby, and Personio, with human review before every submit.",
+    keyDecisions:
+      "Runs bill the Claude subscription, never an API key: the server refuses to start if any API-billing variable is set and strips them from the child process; success judged from the pdflatex log, since its exit code is unreliable here; prompt sent over stdin because Windows re-parses flags in the .CMD shim; the filesystem as the database, one folder per run.",
+    stack: [
+      "Python",
+      "Claude Code CLI",
+      "JSON Schema",
+      "LaTeX",
+      "Tailscale",
+      "Task Scheduler",
+    ],
+    links: {},
+    status: "In daily use",
+  },
+  {
     title: "AWS Account Onboarding Automation",
     problem: "Manual AWS account setup is slow, inconsistent, and error-prone.",
     description:

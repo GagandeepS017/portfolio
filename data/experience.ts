@@ -76,15 +76,15 @@ export const experience: Experience[] = [
 
 export const education: Education[] = [
   {
-    degree: "M.Sc. Big Data & Artificial Intelligence (120 ECTS)",
+    degree: "M.Sc. Computer Science, Focus on Big Data & Artificial Intelligence (120 ECTS)",
     school: "SRH University of Berlin",
-    period: "07/2024 – Expected 09/2026",
+    period: "10/2024 – 09/2026",
     location: "Berlin, Germany",
     logo: "/logos/srh.png",
     details: [
       "Master's thesis: a failure taxonomy of LLM-generated Infrastructure-as-Code, a four-referee verifier (Terraform validate/plan, Checkov, tfsec, OPA/Rego) plus an automated self-repair loop across 560 runs and three models, with survival analysis over 2,068 logged errors.",
       "Coursework across machine learning, deep learning, cloud, and data engineering; hands-on with AWS, Azure, and GCP, backed by 30+ cloud and AI badges.",
-      "Current CGPA 1.4 on the German 1.0–5.0 scale (1.0 = best).",
+      "CGPA 1.2 on the German 1.0–5.0 scale (1.0 = best).",
     ],
   },
   {

@@ -28,7 +28,7 @@ export default function About() {
               Then LLMs changed what software could do, and I wanted in, not
               as a spectator. So I moved to Berlin for an{" "}
               <span className="text-neutral-200">M.Sc. in Big Data &amp; AI</span>{" "}
-              at SRH (graduating Sept 2026), where I also work as a{" "}
+              at SRH (completed 2026), where I also worked as a{" "}
               <span className="text-neutral-200">Research Assistant</span>{" "}
               building end-to-end{" "}
               <span className="text-neutral-200">RAG pipelines</span>, ChromaDB
@@ -60,7 +60,7 @@ export default function About() {
               <GraduationCap size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden />
               <span className="text-neutral-300">
                 M.Sc. Big Data &amp; AI, SRH Berlin
-                <span className="block text-xs text-neutral-500">Graduating Sept 2026 · CGPA 1.4</span>
+                <span className="block text-xs text-neutral-500">Completed 2026 · CGPA 1.2</span>
               </span>
             </li>
             <li className="flex items-start gap-3">

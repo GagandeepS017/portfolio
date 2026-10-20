@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 // plain prose suitable for a static document.
 const summary = [
   "Backend engineer turned AI developer. My path started with two years of enterprise Java/Spring Boot at Vrize in Bangalore, real production systems for real clients, where testing, CI/CD, and maintainable code mattered more than a passing notebook cell.",
-  "Now I'm focused on LLM evaluation, RAG pipelines, and shipping GenAI features that survive contact with real users. I moved to Berlin for an M.Sc. in Big Data & AI at SRH (graduating Sept 2026), where I also work as a Research Assistant building retrieval pipelines. My master's thesis is an empirical study of verifier-guided LLM self-repair across three frontier models, built with backend discipline: sandboxed execution, eval harnesses, streaming APIs, and Infrastructure-as-Code.",
+  "Now I'm focused on LLM evaluation, RAG pipelines, and shipping GenAI features that survive contact with real users. I moved to Berlin for an M.Sc. in Big Data & AI at SRH (completed 2026), where I also worked as a Research Assistant building retrieval pipelines. My master's thesis is an empirical study of verifier-guided LLM self-repair across three frontier models, built with backend discipline: sandboxed execution, eval harnesses, streaming APIs, and Infrastructure-as-Code.",
 ];
 
 function Heading({ children }: { children: React.ReactNode }) {

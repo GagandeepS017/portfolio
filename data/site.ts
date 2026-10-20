@@ -15,7 +15,7 @@ export const site = {
   description:
     "Portfolio of Gagandeep Shivanna, AI/ML Engineer and Backend Developer in Berlin. LLM-powered applications, NLP pipelines, and cloud automation. Open to Werkstudent, internship, and full-time roles in Germany.",
   languages: [
-    { name: "English", level: "C2" },
+    { name: "English", level: "C1" },
     { name: "German", level: "B1" },
     { name: "Kannada", level: "Native" },
   ],
