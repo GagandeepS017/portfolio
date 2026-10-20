@@ -74,7 +74,7 @@ export default function About() {
               <MapPin size={18} className="mt-0.5 shrink-0 text-accent" aria-hidden />
               <span className="text-neutral-300">
                 {site.location}
-                <span className="block text-xs text-neutral-500">Student visa, work permitted</span>
+                <span className="block text-xs text-neutral-500">Work permitted</span>
               </span>
             </li>
             <li className="flex items-start gap-3">
